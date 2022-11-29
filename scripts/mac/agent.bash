@@ -165,7 +165,7 @@ if [[ -z "$repo_branch" ]]; then
 fi
 
 # Consts
-repo_url="https://raw.githubusercontent.com/logzio/logzio-agent-manifest/$repo_branch"          # logzio-agent-manifest repo URL
+repo_url="https://raw.githubusercontent.com/sehorne/logzio-agent-manifest/$repo_branch"          # logzio-agent-manifest repo URL
 
 # Create temp directory with files
 mkdir -p $logzio_temp_dir
@@ -230,4 +230,4 @@ echo -e "\ninstaller:"
 source $logzio_temp_dir/installer.bash
 
 # Delete temp directory
-delete_temp_dir
+# delete_temp_dir
