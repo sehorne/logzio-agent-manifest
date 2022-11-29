@@ -193,7 +193,7 @@ function is_helm_installed () {
 function add_logzio_helm_repo () {
     write_log "INFO" "Adding Logz.io Helm repo ..."
 
-    helm repo add logzio-helm https://logzio.github.io/logzio-helm >/dev/null 2>$task_error_file
+    helm repo add logzio-helm https://sehorne.github.io/logzio-helm >/dev/null 2>$task_error_file
     if [[ $? -eq 0 ]]; then
         return
     fi
