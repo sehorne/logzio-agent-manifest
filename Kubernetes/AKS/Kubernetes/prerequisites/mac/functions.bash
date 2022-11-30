@@ -73,7 +73,7 @@ function can_k8s_cluster_connect_to_logzio_logs () {
         return 3
     fi
 
-    sleep 300
+    sleep 150 
 
     local pod_status=$(kubectl get pods | grep logzio-logs-connection-test | tr -s ' ' | cut -d ' ' -f3)
     if [[ "$pod_status" != "Completed" ]]; then
@@ -129,7 +129,7 @@ function can_k8s_cluster_connect_to_logzio_metrics () {
         return 3
     fi
 
-    sleep 300
+    sleep 150 
 
     local pod_status=$(kubectl get pods | grep logzio-metrics-connection-test | tr -s ' ' | cut -d ' ' -f3)
     if [[ "$pod_status" != "Completed" ]]; then
